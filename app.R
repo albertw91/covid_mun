@@ -11,7 +11,7 @@ library(plotly)
 ui <- fluidPage(
   
   # Titulo
-  titlePanel("COVID19 en M\u00E9xico. Registros reportados por la Sr\u00EDa de Salud al 4 de Mayo"),
+  titlePanel("COVID19 en M\u00E9xico. Registros reportados por la Sr\u00EDa de Salud al 6 de Mayo"),
   
   #sidebarPanel(
  
@@ -65,7 +65,7 @@ server <- function(input, output) {
   
 
   # CArgar info covid (se actualiza el nombre de archivo, previamente se suebe a media fire)
-  html_shp <- readLines('http://www.mediafire.com/file/38b7drhwpy1rmrb/200504COVID19MEXICO.csv/file')
+  html_shp <- readLines('https://www.mediafire.com/file/z7rj0fybgsw0i15/200506COVID19MEXICO.csv/file')
   rg_shp <- html_shp[grep("Download file", html_shp, perl = F)+1  ]
   rg2_shp <- sub("\\W+href=\\\"", "", rg_shp)
   rg3_shp <- sub("\\\">", "", rg2_shp)
