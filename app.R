@@ -11,7 +11,7 @@ library(plotly)
 ui <- fluidPage(
   
   # Titulo
-  titlePanel("COVID19 en M\u00E9xico. Registros reportados por la Sr\u00EDa de Salud al 6 de Mayo"),
+  titlePanel("COVID19 en M\u00E9xico. Registros reportados por la Sr\u00EDa de Salud al 8 de Mayo"),
   
   #sidebarPanel(
  
